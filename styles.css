@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+   
+   
+    
+}
+
+
+.btn{
+    transition:width 10s!important;
+}
+
+.btn:hover{
+    background-color:black!important;
+    width:200px;
+}
+
+
+/* Using after for the header*/
+h2{
+     text-align:center;
+     margin: 0px auto;
+    margin-bottom:30px!important;
+}
+h2::after{
+
+  display:block;
+  background-color:black;
+  height: 2px;
+  content:"";
+  width:15%;
+
+ /* align-self: left;*/
+    margin-top: 20px;
+    margin-left:40px;
+    position:relative;
+    left:36%;
+    margin-bottom:30px;
+}
+
+/*This is way faster*/
+
+.section-meals{
+    list-style:none;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+ 
+.section-meals li{
+    display:inline-block;
+    width:10%;
+}
+
+
+/*Also has an zoom-in effect*/
+.meal-image{
+    overflow:hidden;
+}
+.section-meals img{
+    width:100%;
+    transform:scale(1.15);
+    transition: transform 0.5s
+}
+
+.section-meals img:hover{
+    transform:scale(1.03);
+}
+
+
+/*Making images with centered icon*/
+.circle{
+        color: #e67e22;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top:10px;
+}
+
+.city-col img{
+
+    width:80%;
+
+}
+
+/*THe card section*/
+
+.card p:nth-of-type(1){
+    font-size: 30px;
+    color:orange;
+}
+
+/*THe span inherits property from <p> */
+span{
+    font-size:30%;
+}
+
+.card{
+    width:30%;
+    margin:10px auto;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 70px 0 rgba(110,130,208, .18); 
+    background-color: white; 
+    border-radius: 20px!important;
+   
+}
+.card p:nth-of-type(2){
+    margin-top:-10px;
+    border-bottom: 1px solid gray
+
+}
+
+.card i{
+     margin-right:5px;
+}
+
+.list-unstyled >li{
+    display:block;
+}
+
+
+
+@media (max-width: 767px) {
+
+.column{
+    width: 300px!important;
+}
+
+.card-sec{
+    margin-top:100px;
+    justify-content: center;
+}
+}
